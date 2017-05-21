@@ -7,7 +7,7 @@
 </p>
 
 - Made using [wings3d](http://www.wings3d.com/)
-- Eyeballed at best
+- Eyeballed from planform at best
 
 ## License
 
