@@ -7,8 +7,10 @@
 </p>
 
 - Made using [wings3d](http://www.wings3d.com/)
-- Eyeballed from planform at best
-- Not optimized too much
+- Normals + UV-mapped (poorly)
+- .obj + simplicial complex
+- Eyeballed at best
+- Not optimized LOL
 - 108kb gzipped
 
 ## License
