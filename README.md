@@ -1,7 +1,7 @@
 # 747-model
 
 <p align="center">
-  <a alt="747" href="http://rickyreusser.com/747">
+  <a alt="747" href="http://rickyreusser.com/747-model/">
     <img src="model/747.png" width="600">
   </a>
 </p>
