@@ -4,8 +4,10 @@
   "description": "747",
   "scripts": {
     "start": "budo --open --live --host localhost www/index.js -- -t glslify",
-    "build": "browserify www/index.js -t es2040 -t glslify | uglifyjs -cm | indexhtmlify | html-inject-meta | html-inject-github-corner > docs/index.html",
-    "assets": "mkdir -p docs/assets && cp assets/matcap.jpg docs/assets/",
+    "build:bundle": "browserify www/index.js -t es2040 -t glslify | uglifyjs -cm > docs/bundle.min.js",
+    "build:html": "node scripts/create-index.js > docs/index.html",
+    "build:assets": "mkdir -p docs/assets && cp assets/matcap.jpg docs/assets/",
+    "build": "npm run build:assets && npm run build:html && npm run build:bundle",
     "convert:747": "node scripts/convert.js < model/747.obj > assets/747.json",
     "convert:engine": "node scripts/convert.js < model/engine.obj > assets/engine.json",
     "convert": "npm run convert:747 && npm run convert:engine"
@@ -16,20 +18,31 @@
   "devDependencies": {
     "browserify": "^14.3.0",
     "budo": "^10.0.3",
+    "create-html": "^3.0.0",
     "es2040": "^1.2.5",
     "fail-nicely": "^2.0.0",
+    "from2-string": "^1.1.0",
     "glslify": "^6.0.2",
     "html-inject-github-corner": "^2.0.0",
     "html-inject-meta": "^3.0.0",
     "indexhtmlify": "^1.3.1",
     "matcap": "0.0.2",
     "parse-obj": "0.0.0",
+    "pkg-up": "^2.0.0",
     "regl": "^1.3.0",
     "regl-camera": "^1.1.2",
     "resl": "^1.0.3",
+    "simple-html-index": "^1.5.0",
     "uglify-js": "^3.0.10"
   },
   "github-corner": {
     "url": "https://github.com/rreusser/747-model"
+  },
+  "html-inject-meta": {
+    "name": "747",
+    "description": "3D model of a 747",
+    "author": "Ricky Reusser",
+    "url": "https://github.com/rreusser/747-model",
+    "image": "https://cdn.rawgit.com/rreusser/747-model/9b489bb8/model/747.png"
   }
 }

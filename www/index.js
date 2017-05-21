@@ -2,7 +2,6 @@ var failNicely = require('fail-nicely');
 var reglCamera = require('regl-camera');
 var glslify = require('glslify');
 
-
 require('regl')({
   //pixelRatio: 2,
   attributes: {antialias: false},
