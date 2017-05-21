@@ -4,7 +4,7 @@ var glslify = require('glslify');
 
 require('regl')({
   //pixelRatio: 2,
-  attributes: {antialias: true},
+  attributes: {antialias: false},
   onDone: require('fail-nicely')(regl => {
     require('resl')({
       manifest: {
@@ -116,8 +116,8 @@ function start (regl, matcap) {
   });
 
 
-  regl.frame(() => {
-    if (!camera.dirty) return;
+  regl.frame((data) => {
+    if (!camera.dirty && data.tick !== 1) return;
     camera(() => {
       draw({model: plane});
       draw([
