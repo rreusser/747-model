@@ -8,6 +8,8 @@
 
 - Made using [wings3d](http://www.wings3d.com/)
 - Eyeballed from planform at best
+- Not optimized too much
+- 108kb gzipped
 
 ## License
 
