@@ -1,0 +1,33 @@
+{
+  "name": "747",
+  "version": "1.0.0",
+  "description": "747",
+  "scripts": {
+    "start": "budo --open --live --host localhost www/index.js -- -t glslify",
+    "build": "browserify www/index.js -t es2040 -t glslify | indexhtmlify | html-inject-meta | html-inject-github-corner > docs/index.html",
+    "convert:747": "node scripts/convert.js < model/747.obj > assets/747.json",
+    "convert:engine": "node scripts/convert.js < model/engine.obj > assets/engine.json",
+    "convert": "npm run convert:747 && npm run convert:engine"
+  },
+  "keywords": [],
+  "author": "Ricky Reusser",
+  "license": "CC-BY-4.0",
+  "devDependencies": {
+    "browserify": "^14.3.0",
+    "budo": "^10.0.3",
+    "es2040": "^1.2.5",
+    "fail-nicely": "^2.0.0",
+    "glslify": "^6.0.2",
+    "html-inject-github-corner": "^2.0.0",
+    "html-inject-meta": "^3.0.0",
+    "indexhtmlify": "^1.3.1",
+    "matcap": "0.0.2",
+    "parse-obj": "0.0.0",
+    "regl": "^1.3.0",
+    "regl-camera": "^1.1.2",
+    "resl": "^1.0.3"
+  },
+  "github-corner": {
+    "url": "https://github.com/rreusser/747-model"
+  }
+}
