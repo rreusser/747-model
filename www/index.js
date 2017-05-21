@@ -1,10 +1,10 @@
 var failNicely = require('fail-nicely');
-var reglCamera = require('regl-camera');
+var reglCamera = require('./regl-camera');
 var glslify = require('glslify');
 
 require('regl')({
-  //pixelRatio: 2,
-  attributes: {antialias: false},
+  pixelRatio: 2,
+  attributes: {antialias: true},
   onDone: require('fail-nicely')(regl => {
     require('resl')({
       manifest: {
@@ -117,6 +117,7 @@ function start (regl, matcap) {
 
 
   regl.frame(() => {
+    if (!camera.dirty) return;
     camera(() => {
       draw({model: plane});
       draw([
