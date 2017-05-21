@@ -6,12 +6,12 @@
   </a>
 </p>
 
-- Made using [wings3d](http://www.wings3d.com/)
-- Normals + UV-mapped (poorly)
-- .obj + simplicial complex
-- Eyeballed at best
-- Not optimized LOL
-- 108kb gzipped
+- Made using [wings3d](http://www.wings3d.com/) 🔧
+- Normals + UV-mapped (poorly) 🤷‍♂️
+- .obj + simplicial complex 📚
+- Eyeballed at best 🙄
+- Not optimized LOL 💥
+- 108kb gzipped 🐘
 
 ## License
 
