@@ -5,6 +5,7 @@
   "scripts": {
     "start": "budo --open --live --host localhost www/index.js -- -t glslify",
     "build": "browserify www/index.js -t es2040 -t glslify | indexhtmlify | html-inject-meta | html-inject-github-corner > docs/index.html",
+    "assets": "mkdir -p docs/assets && cp assets/matcap.jpg docs/assets/",
     "convert:747": "node scripts/convert.js < model/747.obj > assets/747.json",
     "convert:engine": "node scripts/convert.js < model/engine.obj > assets/engine.json",
     "convert": "npm run convert:747 && npm run convert:engine"

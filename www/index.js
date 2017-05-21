@@ -11,7 +11,7 @@ require('regl')({
       manifest: {
         matcap: {
           type: 'image',
-          src: 'assets/matcap-12.jpg',
+          src: 'assets/matcap.jpg',
           parser: img => regl.texture({data: img, flipY: true}),
         }
       },
