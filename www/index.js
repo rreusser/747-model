@@ -121,9 +121,9 @@ function start (regl, matcap) {
       draw({model: plane});
       draw([
         {model: engine, translate: [-0.1, 0, 0]},
-        {model: engine, translate: [1.50, 0.18, 1.8]},
+        {model: engine, translate: [1.50, 0.195, 1.8]},
         {model: engine, translate: [-0.1, 0, -4.15]},
-        {model: engine, translate: [1.50, 0.18, -4.15 - 1.8]},
+        {model: engine, translate: [1.50, 0.195, -4.15 - 1.8]},
       ]);
     });
   });
