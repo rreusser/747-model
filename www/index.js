@@ -3,7 +3,7 @@ var reglCamera = require('./regl-camera');
 var glslify = require('glslify');
 
 require('regl')({
-  pixelRatio: 2,
+  //pixelRatio: 2,
   attributes: {antialias: true},
   onDone: require('fail-nicely')(regl => {
     require('resl')({
