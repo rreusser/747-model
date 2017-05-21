@@ -1,4 +1,4 @@
-# 747-model ✈️
+# 747-model
 
 <p align="center">
   <a alt="747" href="http://rickyreusser.com/747">
