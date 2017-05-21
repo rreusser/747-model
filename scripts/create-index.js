@@ -8,7 +8,7 @@ var fs = require('fs');
 var pkg = JSON.parse(fs.readFileSync(require('pkg-up').sync(), 'utf8'));
 
 fromString(html({
-  script: 'bundle.js',
+  script: 'bundle.min.js',
   scriptAsync: true
 }))
   .pipe(injectMeta(pkg))
