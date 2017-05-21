@@ -100,6 +100,10 @@ function start (regl, matcap) {
       translate: (ctx, props) => props.translate || [0, 0, 0],
       img: matcap
     },
+    cull: {
+      enable: true,
+      face: 'back',
+    },
     count: (ctx, props) => props.model.positions.length
   })
 
