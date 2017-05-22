@@ -13,6 +13,10 @@
 - Not optimized LOL 💥
 - 108kb gzipped 🐘
 
+## See also
+
+- [Sailplane model](https://github.com/rreusser/747-model)
+
 ## License
 
 &copy; 2017 Ricky Reusser. This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
