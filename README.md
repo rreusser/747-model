@@ -15,7 +15,7 @@
 
 ## See also
 
-- [Sailplane model](https://github.com/rreusser/747-model)
+- [Sailplane model](https://github.com/rreusser/sailplane-model)
 
 ## License
 
